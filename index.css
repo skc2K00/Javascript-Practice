@@ -1,0 +1,14 @@
+.creditcard {
+    height: 240px;
+    width: 440px;
+    background-color: gold;
+    border-radius: 8px;
+}
+
+.indianoil{
+    justify-content: center;
+}
+.ind_image {
+    height: 40px;
+    width:40px;
+}
