@@ -20,6 +20,9 @@ api.createOrder(cart, function () {
     })
 })
 
+//here if no of API dependent on one another then callback functions increses
+//the code grows horizontally instead of vertically which is know as callback hell or pyramid of doom 
+
 //If you see here after the order creation the payment should be done 
 // and we are not calling the proceedToPayment api here as we are giving the control
 //to createOrder api for calling it. Like the same here one api is calling another on it goes on incase of a huge application.
