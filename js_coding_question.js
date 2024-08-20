@@ -25,6 +25,19 @@ let numbers = [92,65,78,7,9,8,6,98,67,54,34,65,48]
 console.log(numbers.filter(num => num%2 === 0))
 
 //Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+
+//best solution
+function isPalindrome(str) {
+    let j = str.length - 1;
+    for (let i=0;i<str.length /2;i++) {
+      if(str[i]  != str[j]) {
+        return false
+      }
+      j--
+    }
+    return true;
+  }
+
 const isPalindrome = (str) => {
     if(str === str.split("").reverse().join("")) {
        return console.log(`${str} is palindrome` )
@@ -35,6 +48,20 @@ const isPalindrome = (str) => {
 
 isPalindrome("level");
 isPalindrome("table");
+
+function issPalindrome(str) {
+    let rev="";
+    for(let i=str.length -1;i >= 0;i--) {
+      rev +=str[i];
+    }
+    if (rev == str) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+
 
 //Write a JavaScript program to find the maximum number in an array.
 const largestNoinArr = (arr) => {
