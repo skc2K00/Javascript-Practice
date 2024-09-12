@@ -14,6 +14,6 @@ function missingNoInArray(n,arr) {
 // let arr= [1,2,3,5,7,8];
 
 let n=5;
-let arr = [2,3,5]
+let arr = [2,3,5,5]
 
 console.log(missingNoInArray(n,arr));

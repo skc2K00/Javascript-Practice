@@ -134,3 +134,45 @@ function Fib(n) {
 
 console.log(Fib(14))
 
+// sec smallest in arr & sec highest in arr
+
+function secSmallest(arr) {
+  let smallest = Infinity
+  let secSmallest = Infinity
+
+  for (num of arr) {
+      if(num<smallest) {
+          secSmallest = smallest;
+          smallest = num;
+      }
+      else if (num <secSmallest && num !== smallest) {
+          secSmallest = num
+      }
+
+  }
+  return secSmallest
+
+}
+
+const arr1 = [5,2,8,3,1,7]
+console.log("sec small : " +secSmallest(arr1))
+
+function secHighest(arr) {
+  let max = -Infinity
+  let secMax = -Infinity
+
+  for (num of arr) {
+      if(num > max) {
+          secMax = max;
+          max = num;
+      }
+      else if (num > secMax && num !== max) {
+          secMax = num
+      }
+
+  }
+  return secMax
+
+}
+
+console.log("sec high : "+secHighest(arr1))

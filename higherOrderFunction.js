@@ -12,8 +12,8 @@ function y(x) {
 y(x);
 
 // Here function 'y' takes another function 'x' as argument.
-// function 'y' is igher order function (hoc)
-// function 'x' is caback function.
+// function 'y' is higher order function (hoc)
+// function 'x' is callback function.
 
 // Don't Repeat Your code (DRY)
 // Try to write reusable code always.
